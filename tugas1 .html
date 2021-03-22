@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Tugas 1 JQuery</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".Hide1").click(function(){$("#gambar1").hide("slow")}); // tombol untuk hide gambar 1 
+			$(".Show1").click(function(){$("#gambar1").show("slow")}); // tombol untuk menampilkan gambar 1 
+			$(".Hide1").click(function(){$("#gambar2").hide("slow")}); // tombol untuk hide gambar 2 
+			$(".Show1").click(function(){$("#gambar2").show("slow")}); // tombol untuk menampilkan gambar 2
+			$(".Hide2").click(function(){$("#gambar3").hide("slow")}); // tombol untuk hide gambar 3 
+			$(".Show2").click(function(){$("#gambar3").show("slow")}); // tombol untuk menampilkan gambar 3
+			$(".Hide2").click(function(){$("#gambar4").hide("slow")}); // tombol untuk hide gambar 4
+			$(".Show2").click(function(){$("#gambar4").show("slow")}); // tombol untuk menampilkan gambar 4 
+		});
+	</script>
+<style>
+		
+	</style>
+</head>
+<body>
+	<button class="Hide1">Sembunyikan Gambar</button><!-- tombol untuk hide gambar -->
+	<button class="Show1">Tampilkan Gambar </button><br><br><!-- tombol untuk menampilkan gambar -->
+	<img id="gambar1"src="gambar1.jpg" style="height: 230px; width:230px;" > 
+	<img id="gambar2"src="gambar2.jpg" style=""><br><br>
+	<button class="Hide2">Sembunyikan gambar</button>
+	<button class="Show2">Tampilkan gambar</button><br><br>
+	<img id="gambar3" src="gambar3.jpg" style="height: 230px; width:400px; "> 
+	<img id="gambar4" src="gambar4.jpg" style="height: 230px; width:230px; ">
+</body>
+</html>
+

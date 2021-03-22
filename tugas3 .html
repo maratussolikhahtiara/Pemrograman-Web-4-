@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Tugas 3 JQuery</title>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#in').click(function(){$(".segi").show("slow")}); // fungsi tombol fade in
+			$("#out").click(function(){$(".segi").hide("slow")}); // fungsi tombol fade out
+			$("#switch").click(function(){
+				$(".segi").css({
+					'background-color' :'orange'
+				});// fungsi tombol fade to 0.3
+			});	
+		});
+	</script>
+	<style>
+		.segi{
+		width: 200px;
+		height: 200px;
+		border-style: black;
+		border-width: 2px;
+		border-color: black;
+		background-color: yellow;
+		/*membuat gambar kotak dengan warna, ukuran yang diinginkan*/
+		}
+	</style>
+</head>
+<body>
+<h1 class="segi"></h1> 
+<button id="in">fade in</button> <!-- create a fade in button -->
+<button id="out">fade out</button> <!-- create a fade out in button -->
+<button id="switch">fade to 0.3</button> <!-- create a fade to 0.3 in button -->
+</body>
+</html>

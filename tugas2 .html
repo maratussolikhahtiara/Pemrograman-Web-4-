@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+		<title>Tugas 2 JQuery</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#kotak1").dblclick(function(){
+				$(".satu").css({
+					'background-color' :'purple'
+				});// output : warna ungu
+			});
+			$("#kotak2").dblclick(function(){
+				$(".dua").css({
+					'background-color' :'pink'
+				});// output : warna pink 
+			});
+			$("#kotak3").dblclick(function(){
+				$(".tiga").css({
+					'background-color' :'red'
+				});//output : warna red
+			});
+			$("#kotak4").dblclick(function(){
+				$(".empat").css({
+					'background-color' :'black'
+				});// output warna : black
+			});
+		});
+	</script>
+	<style >
+	div { 
+	width: 100px;
+	height: 100px;
+	border-style: black;
+	border-width: 2px;
+	border-color: yellow;
+	background-color: yellow;
+	margin-left:15px;
+	float:left;		
+	}
+		.satu{
+			border-radius: 0px; 
+		}
+		.dua{
+			border-radius: 0px;
+		}
+		.tiga{
+			border-radius: 0px; 
+		}
+		.empat{
+			border-radius: 0px; 
+		}
+	</style>
+</head>
+<body>
+	<p> the box will change color if u clicked </p>
+<div id= "kotak1" class="satu"></div> <!-- the box that was created in the style -->
+<div id= "kotak2" class="dua"></div> <!-- the box that was created in the style -->
+<div id= "kotak3" class="tiga"></div> <!-- the box that was created in the style -->
+<div id= "kotak4" class="empat"></div> <!-- the box that was created in the style -->
+</body>
+</html>
